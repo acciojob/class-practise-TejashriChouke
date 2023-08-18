@@ -8,6 +8,26 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+    class Selector:
+    def __init__(self, element):
+        self.element = element
+
+    def apply_styles(self):
+        self.element.style.color = "#00f"
+        self.element.style.backgroundColor = "#eee"
+        self.element.style.fontFamily = "Arial"
+        self.element.style.fontSize = "20px"
+
+# Example usage
+p_elements = document.querySelectorAll("p")
+
+selector = Selector(p_elements[0])
+selector.apply_styles()
+
+selector = Selector(p_elements[2])
+selector.apply_styles()
+
+   
     <script type="text/javascript" src="./script.js">
 </script>
 
